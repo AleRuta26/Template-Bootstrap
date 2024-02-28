@@ -17,7 +17,6 @@
 </head>
 
 <body class="d-flex flex-column">
-    
     <header class="p-3 border-bottom position-static">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -33,10 +32,10 @@
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 link-secondary">Homepage</a></li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Cronaca</a></li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Attualità</a></li>
-                    <li><a href="#" class="nav-link px-2 link-body-emphasis">Eventi</a></li>
+                    <li><button type="button" class="btn btn-outline-primary m-1">Homepage</button></li>
+                    <li><button type="button" class="btn btn-outline-primary m-1">Articoli</button></li>
+                    <li><button type="button" class="btn btn-outline-primary m-1">Cronaca</button></li>
+                    <li><button type="button" class="btn btn-outline-primary m-1">Eventi</button></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -62,11 +61,11 @@
         </div>
     </header>
 
-    <div class="container-fluid d-flex flex-row p-0">
+    <div class="container-fluid d-flex flex-row p-0 w-100 m-0">
         <!--Sidebar-->
-        <aside class="d-inline-block justify-content-start position-relative">
+        <aside class="d-inline-block justify-content-start position-scroll">
             <div class="d-inline-flex flex-column align-items-right flex-shrink-0 bg-body-tertiary border "
-                style="width: 25vw;">
+                style="width: 20vw;">
                 <a href="/"
                     class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
                     <span class="fs-5 fw-semibold">Articoli recenti</span>
@@ -182,15 +181,15 @@
                 </div>
             </div>
         </aside>
-        <!--Articolo Corrente-->
-        <article class="container-fluid d-inline-block p-5">
+        <!--Articolo Corrente e commenti-->
+        <article class="container-fluid d-inline-block p-4">
             <div class="container-fluid border p-3 b-4">
-                <h1 class="fs-1">Titolo Articolo</h1>
+                <h1 class="fs-2">Titolo Articolo</h1>
                 <section>
-                    <p class="text-start text-break fs-3">
+                    <p class="text-start text-break fs-4">
                         Primo Paragrafo
                     </p>
-                    <p class="text-start text-break fs-4">
+                    <p class="text-start text-break  fs-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate ultricies erat a
                         ultricies.
                         Proin condimentum ipsum id libero sodales, quis iaculis ipsum feugiat. Proin tincidunt diam in
@@ -210,33 +209,10 @@
                     </p>
                 </section>
                 <section>
-                    <p class="text-start text-break fs-3">
-                        Secondo Paragrafo
+                    <p class="text-start text-break fs-md-4">
+                        Primo Paragrafo
                     </p>
-                    <p class="text-start text-break fs-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate ultricies erat a
-                        ultricies.
-                        Proin condimentum ipsum id libero sodales, quis iaculis ipsum feugiat. Proin tincidunt diam in
-                        lorem
-                        lacinia posuere. Fusce suscipit porttitor diam sit amet semper. Proin sit amet auctor ex.
-                        Vestibulum
-                        accumsan commodo neque, at condimentum magna sodales eget. Nulla finibus lacus ut mi auctor
-                        volutpat. Sed gravida est varius, semper nisl eu, scelerisque ipsum. Pellentesque tempus enim
-                        vel
-                        lectus laoreet, a sodales leo mollis. Phasellus leo dolor, lobortis et orci in, pellentesque
-                        imperdiet turpis. Sed placerat interdum luctus. Nullam elementum lorem augue, id vulputate neque
-                        aliquam quis. Phasellus elit enim, cursus vitae lorem quis, tincidunt maximus magna. Maecenas
-                        eget
-                        nibh egestas risus convallis congue. Suspendisse aliquam diam purus, et suscipit est molestie
-                        in.
-                        Maecenas sagittis lacus ac lacinia gravida.
-                    </p>
-                </section>
-                <section>
-                    <p class="text-start text-break fs-3">
-                        Terzo Paragrafo
-                    </p>
-                    <p class="text-start text-break fs-4">
+                    <p class="text-start text-break fs-md-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate ultricies erat a
                         ultricies.
                         Proin condimentum ipsum id libero sodales, quis iaculis ipsum feugiat. Proin tincidunt diam in
@@ -256,70 +232,64 @@
                     </p>
                 </section>
             </div>
-        </article>
+            <section class="p-3">
+                <h2>Commenti</h2>
+                <div class="container text-dark">
+                    <div class="justify-content-center">
+                        <div class="col-md-11 col-lg-9 col-xl-11">
+                            <div class="d-flex flex-start mb-3">
+                                <div class="card w-100">
+                                    <div class="card-body ">
+                                        <div>
+                                            <h5>Autore Commento 1</h5>
+                                            <p class="small">3 hours ago</p>
+                                            <p>
+                                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                                ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
+                                                viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                Donec lacinia congue felis in faucibus ras purus odio, vestibulum in
+                                                vulputate at, tempus viverra turpis.
+                                            </p>
 
-        <section>
-            <div class="container my-5 text-dark">
-              <div class="row d-flex justify-content-center">
-                <div class="col-md-11 col-lg-9 col-xl-7">
-                  <div class="d-flex flex-start mb-3">
-                    <div class="card w-100">
-                      <div class="card-body p-3">
-                        <div class="">
-                          <h5>Johny Cash</h5>
-                          <p class="small">3 hours ago</p>
-                          <p>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
-                            ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus
-                            viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
-                            Donec lacinia congue felis in faucibus ras purus odio, vestibulum in
-                            vulputate at, tempus viverra turpis.
-                          </p>
-          
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex align-items-center">
-                              <a href="#!" class="link-muted me-2"><i class="fas fa-thumbs-up me-1"></i>132</a>
-                              <a href="#!" class="link-muted"><i class="fas fa-thumbs-down me-1"></i>15</a>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#!" class="link-muted"><button type="button"
+                                                        class="btn btn-outline-primary">Rispondi</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#!" class="link-muted"><i class="fas fa-reply me-1"></i> Reply</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <div class="d-flex flex-start">
-                    <div class="card w-100">
-                      <div class="card-body p-3">
-                        <div class="">
-                          <h5>Mindy Campbell</h5>
-                          <p class="small">5 hours ago</p>
-                          <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
-                            cumque doloribus dolorum dolor repellat nemo animi at iure autem fuga
-                            cupiditate architecto ut quam provident neque, inventore nisi eos quas?
-                          </p>
-          
-                          <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex align-items-center">
-                              <a href="#!" class="link-muted me-2"><i class="fas fa-thumbs-up me-1"></i>158</a>
-                              <a href="#!" class="link-muted"><i class="fas fa-thumbs-down me-1"></i>13</a>
+
+                            <div class="d-flex flex-start">
+                                <div class="card w-100">
+                                    <div class="card-body p-3">
+                                        <div class="">
+                                            <h5>Autore Commento 2</h5>
+                                            <p class="small">5 hours ago</p>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus
+                                                cumque doloribus dolorum dolor repellat nemo animi at iure autem fuga
+                                                cupiditate architecto ut quam provident neque, inventore nisi eos quas?
+                                            </p>
+
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <a href="#!" class="link-muted"><button type="button"
+                                                        class="btn btn-outline-primary">Rispondi</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#!" class="link-muted"><i class="fas fa-reply me-1"></i> Reply</a>
-                          </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-          </section>
-        
+            </section>
+        </article>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 
