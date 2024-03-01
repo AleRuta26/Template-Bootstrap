@@ -19,7 +19,7 @@
 
 <body class="d-flex flex-column" style="background-color: rgb(211, 211, 211);">
     <header class="p-3 border-bottom position-static bg-white">
-        <div class="container">
+        <div class="container-fluid">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a class="navbar-brand" href="#">
                     <img src="./images/logo.svg" alt="Logo" width="30" height="24"
@@ -33,10 +33,10 @@
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#">Homepage</a></li>
-                    <li><a href="#">Articoli</a></li>
-                    <li><a href="#">Cronaca</a></li>
-                    <li><a href="#">Eventi</a></li>
+                    <li><a href="#" class="nav-link px-2 link-secondary">Homepage</a></li>
+                    <li><a href="#" class="nav-link px-2 link-secondary">Articoli</a></li>
+                    <li><a href="#" class="nav-link px-2 link-secondary">Cronaca</a></li>
+                    <li><a href="#" class="nav-link px-2 link-secondary">Eventi</a></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -63,10 +63,10 @@
     </header>
 
     <div
-        class="container d-flex flex-row align-self-center justify-content-center border gap-2 p-4 mt-4" style="background-color: rgb(243, 243, 243);">
+        class="container-fluid w-50 d-flex flex-column flex-xl-row align-self-center justify-content-between border gap-2 p-4 mt-4" style="background-color: rgb(243, 243, 243);">
         <!--Articolo Corrente e commenti-->
-        <article class="container-fluid d-inline-block p-0 bg-white">
-            <div class="container border p-3 b-4" style="width:52vw">
+        <article class="container-fluid d-inline-block p-0 bg-white w-100">
+            <div class="container border p-3 b-4 testo">
                 <h1 class="fs-2">Titolo Articolo</h1>
                 <section>
                     <p class="text-start text-break fs-4">
@@ -109,22 +109,8 @@
                         in.
                         Maecenas sagittis lacus ac lacinia gravida.
                     </p>
-                    <!--SwiperJS-->
-                    <div class="swiper">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide"><img src="./images/swiper/1.jpg" class="swimg object-fit-scale"></div>
-                            <div class="swiper-slide"><img src="./images/swiper/2.jpg" class="swimg object-fit-scale"></div>
-                            <div class="swiper-slide"><img src="./images/swiper/3.jpg" class="swimg object-fit-scale"></div>
-                        </div>
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
+                    
+                    
                     <p class="text-start text-break  fs-5">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate ultricies erat a
                         ultricies.
@@ -145,7 +131,7 @@
                     </p>
                 </section>
                 <!--Pubblicità-->
-                <div class="d-inline-block align-items-right bg-body-tertiary border w-100" style="height:15vw;">
+                <div class="d-inline-block align-items-right bg-body-tertiary border w-100">
                     <div class="list-group list-group-flush scrollarea">
                         <p class="text-start text-break  fs-5">Inserire Pubblicità</p>
                     </div>
@@ -213,7 +199,7 @@
         
 
         <!--Sidebar-->
-        <aside class="container d-inline-flex flex-column flex-wrap w-100 justify-content-evenly p-0">
+        <aside class="container-xl d-inline-flex flex-column flex-wrap w-50 justify-content-evenly p-0">
             <!--Articoli-->
             <div id="carouselExampleDark" class="carousel carousel-dark slide border bg-white">
                 <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none">
@@ -271,8 +257,7 @@
 
 
             <!--Articoli recenti-->
-            <div class="d-inline-flex flex-column align-items-right flex-shrink-0 bg-body-tertiary border "
-                style="width: 15vw;">
+            <div class="d-inline-flex flex-column align-items-right flex-shrink-0 bg-body-tertiary border articoli-recenti ">
                 <a href="/"
                     class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
                     <span class="fs-5 fw-semibold">Articoli recenti</span>

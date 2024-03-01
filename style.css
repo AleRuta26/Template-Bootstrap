@@ -1,8 +1,14 @@
-.swiper{
-    height:50vh;
+
+
+
+.testo{
+    width:50vw;
 }
-.swimg{
-    width: 100%;
-    height: 100%;
-    display: block;
+
+
+
+@media (max-width:425px){
+    .testo{
+        width:80vw;
+    }
 }
