@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
-<body class="d-flex flex-column" style="background-color: rgb(211, 211, 211);">
-    <header class="p-3 border-bottom position-static bg-white">
+<body class="d-flex flex-column">
+    <header class="p-3 border-bottom position-static bg-light">
         <div class="container-fluid">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a class="navbar-brand" href="#">
@@ -46,7 +46,7 @@
                 <div class="dropdown text-end">
                     <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
                         data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                        <img src="./images/user.svg" alt="mdo" width="32" height="32" class="rounded-circle">
                     </a>
                     <ul class="dropdown-menu text-small">
                         <li><a class="dropdown-item" href="#">Nuovo Articolo</a></li>
@@ -63,16 +63,16 @@
     </header>
 
     <div
-        class="container-fluid w-50 d-flex flex-column flex-xl-row align-self-center justify-content-between border gap-2 p-4 mt-4" style="background-color: rgb(243, 243, 243);">
+        class="container-xl d-flex flex-column flex-xl-row align-self-center justify-content-between border gap-2 p-xl-4 p-2 mt-4" style="background-color: rgb(243, 243, 243);">
         <!--Articolo Corrente e commenti-->
         <article class="container-fluid d-inline-block p-0 bg-white w-100">
             <div class="container border p-3 b-4 testo">
                 <h1 class="fs-2">Titolo Articolo</h1>
                 <section>
-                    <p class="text-start text-break fs-4">
+                    <p class="text-start text-break fs-5">
                         Primo Paragrafo
                     </p>
-                    <p class="text-start text-break  fs-5">
+                    <p class="text-start text-break  fs-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate ultricies erat a
                         ultricies.
                         Proin condimentum ipsum id libero sodales, quis iaculis ipsum feugiat. Proin tincidunt diam in
@@ -91,7 +91,7 @@
                         Maecenas sagittis lacus ac lacinia gravida.
                     </p>
                     
-                    <p class="text-start text-break fs-5">
+                    <p class="text-start text-break fs-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate ultricies erat a
                         ultricies.
                         Proin condimentum ipsum id libero sodales, quis iaculis ipsum feugiat. Proin tincidunt diam in
@@ -110,8 +110,7 @@
                         Maecenas sagittis lacus ac lacinia gravida.
                     </p>
                     
-                    
-                    <p class="text-start text-break  fs-5">
+                    <p class="text-start text-break  fs-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate ultricies erat a
                         ultricies.
                         Proin condimentum ipsum id libero sodales, quis iaculis ipsum feugiat. Proin tincidunt diam in
@@ -199,40 +198,32 @@
         
 
         <!--Sidebar-->
-        <aside class="container-xl d-inline-flex flex-column flex-wrap w-50 justify-content-evenly p-0">
+        <aside class="container-fluid d-inline-flex gap-2 flex-row flex-xl-column flex-wrap justify-content-evenly p-0 w-50">
             <!--Articoli-->
             <div id="carouselExampleDark" class="carousel carousel-dark slide border bg-white">
                 <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none">
                     <span class="fs-5 fw-semibold">Potrebbe interessarti</span>
                 </a>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="./images/1.jpg" class="w-100">
+                        <img src="./images/swiper/1.jpg" class="swiper-slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Articolo 1</h5>
-                            <p>Descrizione Articolo</p>
+                            <h5 class="text-white">Articolo 1</h5>
+                            <p class="text-white">Descrizione Articolo</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="./images/2.jpg" class="w-100">
+                        <img src="./images/swiper/2.jpg" class="swiper-slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Articolo 2</h5>
-                            <p>Descrizione Articolo</p>
+                            <h5 class="text-white">Articolo 2</h5>
+                            <p class="text-white">Descrizione Articolo</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./images/3.jpg" class="w-100">
+                        <img src="./images/swiper/3.jpg" class="swiper-slide">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Articolo 3</h5>
-                            <p>Descrizione Articolo</p>
+                            <h5 class="text-white">Articolo 3</h5>
+                            <p class="text-white">Descrizione Articolo</p>
                         </div>
                     </div>
                 </div>
@@ -249,7 +240,7 @@
             </div>
 
             <!--Pubblicità-->
-            <div class="d-inline-block align-items-right bg-body-tertiary border">
+            <div class="d-inline-block align-items-right bg-body-tertiary border pubblicita">
                 <div class="list-group list-group-flush scrollarea">
                     <p class="text-start text-break  fs-5">Inserire Pubblicità</p>
                 </div>
@@ -265,20 +256,20 @@
                 <div class="list-group list-group-flush border-bottom overflow-hidden">
                     <a href="#" class="d-flex flex-row gap-2 list-group-item list-group-item-action active py-3 lh-sm"
                         aria-current="true">
-                        <img src="./images/1.jpg" class="object-fit-contain rounded" style="width:4em">
+                        <img src="./images/swiper/1.jpg" class="object-fit-contain rounded" style="width:4em">
                         <div class="d-flex w-100 align-items-center justify-content-between">
 
                             <strong class="mb-1">Articolo 1</strong>
                         </div>
                     </a>
                     <a href="#" class="d-flex flex-row gap-2 list-group-item list-group-item-action py-3 lh-sm">
-                        <img src="./images/2.jpg" class="object-fit-contain rounded" style="width:4em">
+                        <img src="./images/swiper/2.jpg" class="object-fit-contain rounded" style="width:4em">
                         <div class="d-flex w-100 align-items-center justify-content-between">
                             <strong class="mb-1">Articolo 2</strong>
                         </div>
                     </a>
                     <a href="#" class="d-flex flex-row gap-2 list-group-item list-group-item-action py-3 lh-sm">
-                        <img src="./images/3.jpg" class="object-fit-contain rounded" style="width:4em">
+                        <img src="./images/swiper/3.jpg" class="object-fit-contain rounded" style="width:4em">
                         <div class="d-flex w-100 align-items-center justify-content-between">
                             <strong class="mb-1">Articolo 3</strong>
                         </div>
@@ -288,14 +279,14 @@
 
 
             <!--Pubblicità-->
-            <div class="d-inline-block align-items-right bg-body-tertiary border">
+            <div class="d-inline-block align-items-right bg-body-tertiary border pubblicita">
                 <div class="list-group list-group-flush scrollarea">
                     <p class="text-start text-break  fs-5">Inserire Pubblicità</p>
                 </div>
             </div>
 
             <!--Pubblicità-->
-            <div class="d-inline-block align-items-right bg-body-tertiary border">
+            <div class="d-inline-block align-items-right bg-body-tertiary border pubblicita">
                 <div class="list-group list-group-flush scrollarea">
                     <p class="text-start text-break  fs-5">Inserire Pubblicità</p>
                 </div>

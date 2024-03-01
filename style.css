@@ -1,14 +1,16 @@
-
-
-
 .testo{
     width:50vw;
 }
 
+.swiper-slide{
+    object-fit:cover;
+}
+
+body{
+    background-image: url(./images/wallpaper.jpg);
+}
 
 
-@media (max-width:425px){
-    .testo{
-        width:80vw;
-    }
+.pubblicita{
+    height:11vw;
 }
